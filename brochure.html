@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quantum Computing Brochure - Krish Keshwala</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@500;700&display=swap');
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.5;
+      padding: 20px;
+    }
+    .page {
+      width: 1000px;
+      height: 700px;
+      background: linear-gradient(135deg, #0b132b 0%, #1c2541 100%);
+      margin: 0 auto 30px auto;
+      padding: 40px;
+      border-radius: 16px;
+      border: 1px solid #3a506b;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    h1, h2, h3 {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #5bc0be;
+      padding-bottom: 15px;
+    }
+    .title-area h1 {
+      font-size: 32px;
+      color: #6fffe9;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .title-area p {
+      font-size: 14px;
+      color: #94a3b8;
+    }
+    .badge {
+      background: rgba(91, 192, 190, 0.15);
+      border: 1px solid #5bc0be;
+      color: #6fffe9;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 25px;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .card h2 {
+      font-size: 18px;
+      color: #5bc0be;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .card p, .card ul {
+      font-size: 13px;
+      color: #cbd5e1;
+    }
+    .card ul {
+      list-style-type: none;
+    }
+    .card ul li {
+      margin-bottom: 10px;
+      position: relative;
+      padding-left: 18px;
+    }
+    .card ul li::before {
+      content: "✦";
+      position: absolute;
+      left: 0;
+      color: #6fffe9;
+    }
+    .quote-box {
+      grid-column: span 2;
+      background: linear-gradient(90deg, rgba(91,192,190,0.1) 0%, rgba(11,19,43,0) 100%);
+      border-left: 4px solid #6fffe9;
+      padding: 15px 20px;
+      font-style: italic;
+      font-size: 13px;
+      color: #e2e8f0;
+      margin-top: 10px;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      color: #64748b;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      padding-top: 10px;
+    }
+    @media print {
+      body { background: none; padding: 0; }
+      .page { box-shadow: none; margin: 0; page-break-after: always; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- PAGE 1 -->
+  <div class="page">
+    <div class="header">
+      <div class="title-area">
+        <h1>Quantum Computing</h1>
+        <p>Moving Beyond Bits to Qubits | Physics & Computer Science</p>
+      </div>
+      <div class="badge">Prepared by: Krish Keshwala | Class 10</div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h2> 1. A Paradigm Shift</h2>
+        <p>Classical computers process information using standard <strong>bits</strong>, which act as microscopic switches representing either a <code>0</code> or a <code>1</code>.</p>
+        <br>
+        <p>Quantum computers leverage the mind-bending laws of <strong>quantum mechanics</strong> to process complex data in ways traditional supercomputers never could. While classical systems process tasks sequentially, quantum architectures evaluate massive solution spaces simultaneously.</p>
+      </div>
+
+      <div class="card">
+        <h2> 2. Core Physics Principles</h2>
+        <ul>
+          <li><strong>The Qubit:</strong> The fundamental unit of quantum information. Unlike a binary bit, a qubit can exist as a <code>0</code>, a <code>1</code>, or any linear combination of both.</li>
+          <li><strong>Superposition:</strong> Allows qubits to hold multiple states at once, scaling computational capacity exponentially with every additional qubit.</li>
+          <li><strong>Quantum Entanglement:</strong> A state where qubits become deeply linked—measuring one instantly determines the state of another regardless of distance.</li>
+        </ul>
+      </div>
+
+      <div class="quote-box">
+        “Nature isn't classical, dammit, and if you want to make a simulation of nature, you'd better make it quantum mechanical.” — <strong>Richard Feynman</strong>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span>School Assignment • Computer Science & Physics</span>
+      <span>Page 1 of 2</span>
+    </div>
+  </div>
+
+  <!-- PAGE 2 -->
+  <div class="page">
+    <div class="header">
+      <div class="title-area">
+        <h1>Applications & Frontiers</h1>
+        <p>Engineering Obstacles & The Technological Horizon</p>
+      </div>
+      <div class="badge">Class 10 Science Project</div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h2> 3. Key Applications</h2>
+        <ul>
+          <li><strong>Drug Discovery:</strong> Simulating molecular and atomic interactions to discover targeted medicines in days rather than decades.</li>
+          <li><strong>Post-Quantum Cryptography:</strong> Engineering unhackable encryption protocols while evaluating current cybersecurity limits.</li>
+          <li><strong>Complex Optimization:</strong> Instantly calculating ultra-dense logistics, supply routes, and financial market stability models.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>4. Technical Obstacles</h2>
+        <ul>
+          <li><strong>Quantum Decoherence:</strong> Qubits are hyper-sensitive. Microscopic changes in temperature or electromagnetic noise cause them to lose their state.</li>
+          <li><strong>Cryogenic Cooling:</strong> Processors require extreme operating environments near absolute zero (-273.15°C) to stay stable.</li>
+          <li><strong>Fault Tolerance:</strong> Building reliable error-correction codes is the main barrier to commercial viability.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top: 20px;">
+      <h2>🏁 5. Conclusion</h2>
+      <p>We are standing on the threshold of a revolution in computational physics. As fault-tolerant topological architectures and qubit counts mature, quantum computing will solve problems in minutes that would take classical supercomputers thousands of years to calculate.</p>
+    </div>
+
+    <div class="footer">
+      <span>Quantum Computing Assignment</span>
+      <span>Page 2 of 2</span>
+    </div>
+  </div>
+
+</body>
+</html>
